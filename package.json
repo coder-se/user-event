@@ -35,7 +35,8 @@
     "test:toolbox": "NODE_OPTIONS='--experimental-vm-modules --experimental-modules --experimental-import-meta-resolve' node scripts/test.js",
     "test:debug": "kcd-scripts --inspect-brk test --runInBand",
     "test:update": "npm test -- --updateSnapshot --coverage",
-    "validate": "kcd-scripts typecheck"
+    "validate": "kcd-scripts typecheck",
+    "prepare": "npm run build"
   },
   "devDependencies": {
     "@esbuild-plugins/node-modules-polyfill": "^0.2.2",
